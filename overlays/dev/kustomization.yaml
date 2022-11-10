@@ -1,4 +1,7 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1beta1
 resources:
-- https://github.com/minghsu0107/cicd-demo-ga-remote//manifests/overlays/dev?ref=main
+  - https://github.com/minghsu0107/cicd-demo-ga-remote//manifests/overlays/dev?ref=a473c6cb0208dc9501122da7fb643e3edfc3d09b
+images:
+  - name: minghsu0107/cicd-demo-ga-remote
+    newTag: main-a473c6c
